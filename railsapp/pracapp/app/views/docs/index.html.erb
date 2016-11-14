@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Docs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Adress</th>
+      <th>State</th>
+      <th>City</th>
+      <th>Zip</th>
+      <th>School</th>
+      <th>Experience</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @docs.each do |doc| %>
+      <tr>
+        <td><%= doc.name %></td>
+        <td><%= doc.adress %></td>
+        <td><%= doc.state %></td>
+        <td><%= doc.city %></td>
+        <td><%= doc.zip %></td>
+        <td><%= doc.school %></td>
+        <td><%= doc.experience %></td>
+        <td><%= link_to 'Show', doc %></td>
+        <td><%= link_to 'Edit', edit_doc_path(doc) %></td>
+        <td><%= link_to 'Destroy', doc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doc', new_doc_path %>

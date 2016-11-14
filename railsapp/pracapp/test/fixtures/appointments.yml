@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  schedule: 2015-10-15 15:22:49
+  Pet: MyString
+  customer: MyString
+  Reminder: MyString
+  reason: MyString
+
+two:
+  schedule: 2015-10-15 15:22:49
+  Pet: MyString
+  customer: MyString
+  Reminder: MyString
+  reason: MyString

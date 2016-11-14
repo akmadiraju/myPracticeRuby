@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @nxtvisit.name %>
+</p>
+
+<p>
+  <strong>Next appointment:</strong>
+  <%= @nxtvisit.next_appointment %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @nxtvisit.purpose %>
+</p>
+
+<%= link_to 'Edit', edit_nxtvisit_path(@nxtvisit) %> |
+<%= link_to 'Back', nxtvisits_path %>

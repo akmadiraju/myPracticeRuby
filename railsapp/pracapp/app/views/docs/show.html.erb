@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @doc.name %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @doc.adress %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @doc.state %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @doc.city %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @doc.zip %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @doc.school %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @doc.experience %>
+</p>
+
+<%= link_to 'Edit', edit_doc_path(@doc) %> |
+<%= link_to 'Back', docs_path %>

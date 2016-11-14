@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Nxtvisits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Petname</th>
+      <th>Nxt</th>
+      <th>Purpose</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nxtvisits.each do |nxtvisit| %>
+      <tr>
+        <td><%= nxtvisit.petname %></td>
+        <td><%= nxtvisit.nxt %></td>
+        <td><%= nxtvisit.purpose %></td>
+        <td><%= link_to 'Show', nxtvisit %></td>
+        <td><%= link_to 'Edit', edit_nxtvisit_path(nxtvisit) %></td>
+        <td><%= link_to 'Destroy', nxtvisit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nxtvisit', new_nxtvisit_path %>
